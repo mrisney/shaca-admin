@@ -4,9 +4,17 @@ import { MenuItemLink, getResources } from 'admin-on-rest';
 
 const Menu = ({ resources, onMenuTap, logout }) => (
     <div>
-        <MenuItemLink to="/posts" primaryText="HPD" onClick={onMenuTap} />
-        <MenuItemLink to="/comments" primaryText="KPD" onClick={onMenuTap} />
+        <MenuItemLink to="/" primaryText="Dashboard" onClick={onMenuTap} />
+        <MenuItemLink to="/hpdmvars" primaryText="HPD" onClick={onMenuTap} />
+        <MenuItemLink to="/hpdmvars" primaryText="KPD" onClick={onMenuTap} />    
+        <MenuItemLink to="/hpdmvars" primaryText="MPD" onClick={onMenuTap} />
+    
+        <MenuItemLink to="/hpdmvars" primaryText="Database Center" onClick={onMenuTap} />
+        <MenuItemLink to="/hpdmvars" primaryText="Aloha Data Systems" onClick={onMenuTap} />
+        <MenuItemLink to="/hpdmvars" primaryText="Aloha Data Systems" onClick={onMenuTap} />
+    
         <MenuItemLink to="/custom-route" primaryText="Configuration" onClick={onMenuTap} />
+        
         {logout}
     </div>
 );
